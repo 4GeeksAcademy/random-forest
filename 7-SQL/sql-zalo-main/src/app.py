@@ -5,7 +5,7 @@ from sqlalchemy import create_engine, text
 from dotenv import load_dotenv
 
 # Cargar variables de entorno desde el archivo .env
-load_dotenv()
+load_dotenv('C:\\Users\\gamma\\Desktop\\Bootcamp\\7-SQL\\sql-zalo-main\\.env.example')
 
 # Crear la cadena de conexión a la base de datos utilizando las variables de entorno
 connection_string = f"postgresql://{os.getenv('DB_USER')}:{os.getenv('DB_PASSWORD')}@{os.getenv('DB_HOST')}/{os.getenv('DB_NAME')}"
